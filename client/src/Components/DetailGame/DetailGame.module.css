@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    padding: 25px;
+
+}
+
+.containerDetail{
+    width: 100%;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.informacion {
+    width: 100%;
+}
+
+.image {
+    width: 450px;
+    border-radius: 5px;
+}
+
+.info {
+    color: white;
+    font-family: 'Minecraftia Regular';
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.name {
+    color: white;
+    font-family: 'Minecraft Evenings';
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px black;
+    animation: salto 1s steps(2) infinite;   
+}
+
+@keyframes salto {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-5px);
+      color: rgb(0, 255, 0);
+    }
+}
+
+span {
+    letter-spacing: 1px;
+}
+
+b {
+    letter-spacing: 2px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+.contLoading {
+    height: 100%;
+}
+
+.loading {
+    color: rgb(255, 10, 10);
+    font-family: 'MINECRAFT PE';
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    padding-top: 7em;
+    padding-bottom: 7em;
+    
+}

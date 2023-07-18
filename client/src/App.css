@@ -1,5 +1,30 @@
 .App {
+  
+  margin: 0;
   text-align: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  text-align: center;
+  background-image:url(./cont/minecraft-1.gif);
+  background-repeat:no-repeat;
+  /*background-position: 50% 50%;*/
+  background-attachment: fixed;
+  background-position: 1% 100%;
+  background-size: cover;
+  
+}
+
+@font-face {
+  font-family: "Minecraftia Regular";
+  src: url("../Minecraftia-Regular.ttf")
+}
+@font-face {
+  font-family: "Minecraft Evenings";
+  src: url("../Minecraft Evenings.ttf")
+}
+@font-face {
+  font-family: "MINECRAFT PE";
+  src: url("../MINECRAFT PE.ttf")
 }
 
 .App-logo {

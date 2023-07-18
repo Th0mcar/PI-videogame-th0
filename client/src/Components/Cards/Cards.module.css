@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    width: 99.8%;
+}
+
+.cardsContainer{
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content:center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+@keyframes borderGlow {
+    0% {
+        border-color: rgba(255, 255, 255, 0.6);
+    }
+    50% {
+        border-color: rgba(0, 0, 0, 0.4);
+    }
+    100% {
+        border-color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.cards {
+    width: 14em;
+    height: 400px;
+    background-color: rgba(53, 52, 50, 0.8);
+    border: 4px solid rgba(255, 255, 255, 0.6); 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.2);
+    font-family: "Minecraft", sans-serif;
+    color: #fff;
+    animation: borderGlow 2s infinite;
+}
+
+
+.cards:hover {
+    transform: scale(1.05);
+    border-color: rgba(0, 0, 0, 0.8);
+    animation: none; 
+}
+
+
+
+
+.cards:hover{
+    transform: scale(1.05);
+    background-color: rgba(51, 46, 37, 0.85);
+    -webkit-box-shadow: inset 0px 0px 25px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 25px 7px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 25px 7px rgba(0,0,0,0.75);
+}
+
+a {
+    text-decoration: none;
+}
+
+.containerButtons {
+    width:85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-family: 'Minecraft Eventings';
+    font-size: 25px;
+    font-weight:bold;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    backdrop-filter: blur(15px);
+}
+
+.buttons:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+.ningunJuego {
+    margin-top: 10%;
+    color: rgb(255, 0, 0);
+    width: 550px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Minecraft Evenings';
+    font-size: 40px;
+    text-shadow: 2px 2px 1px rgb(175, 163, 163);
+    letter-spacing: 2px;
+    animation: salto 1s steps(4) infinite;   
+}
+
+@keyframes salto {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-5px);
+    }
+}
